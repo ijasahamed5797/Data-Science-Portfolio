@@ -53,7 +53,7 @@ MBA graduate with expertise in business strategy, transitioning into Data Analyt
 
 ## Education
 - **MBA** - Master of Business Administration
-- Currently pursuing Data Analytics certification
+- Currently pursuing Data Science and Analytics certification
 
 ## Contact
 - **LinkedIn**: [https://www.linkedin.com/in/ijasahamedshajahan]
