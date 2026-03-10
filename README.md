@@ -12,10 +12,10 @@
 
 Welcome to my **Data Science, Machine Learning, and Generative AI portfolio**.
 
-This repository showcases projects where I apply **data analysis, machine learning, deep learning, and AI systems** to solve real-world problems and build interactive analytical tools.
+This repository showcases projects where I apply **data analysis, machine learning, deep learning, business intelligence, and AI systems** to solve real-world problems and build intelligent analytical tools.
 
 🌐 **Portfolio Website**
-https://ijasahamed.lovable.app/
+👉 https://ijasahamed.lovable.app/
 
 ---
 
@@ -23,12 +23,13 @@ https://ijasahamed.lovable.app/
 
 MBA graduate with a background in **business strategy and analytics**, currently transitioning into **Data Science and Artificial Intelligence**.
 
-I specialize in transforming complex datasets into **actionable insights and intelligent systems** using:
+I focus on transforming complex datasets into **actionable insights and intelligent systems** using:
 
 • machine learning
 • deep learning
 • generative AI
-• interactive analytics dashboards
+• business intelligence dashboards
+• interactive analytics applications
 
 My goal is to combine **data science with real-world applications** that solve meaningful business and behavioral problems.
 
@@ -66,7 +67,11 @@ ARIMA, SARIMA, Prophet, LSTM Forecasting
 
 ### Data Visualization
 
-Matplotlib, Seaborn, Plotly, Streamlit, Excel
+Matplotlib, Seaborn, Plotly, Streamlit
+
+### Business Intelligence
+
+Power BI, DAX, Data Modeling
 
 ### Tools & Platforms
 
@@ -186,6 +191,34 @@ The system enables users to:
 
 ---
 
+# 📦 Supply Chain & Logistics Analytics Dashboard
+
+**Tools:** Power BI, DAX, Data Modeling, SQL
+
+This project presents an **interactive Power BI dashboard designed to analyze supply chain operations and logistics performance**.
+
+The dashboard provides insights into:
+
+• supplier performance
+• inventory distribution
+• shipment efficiency
+• customer revenue patterns
+
+It helps stakeholders monitor operational performance and identify **logistics bottlenecks and inventory imbalances**.
+
+### Key Features
+
+• Interactive Power BI dashboard
+• Supplier performance analysis
+• Inventory optimization insights
+• Shipment and logistics monitoring
+• Customer revenue analytics
+
+🔗 **Project:**
+[Supply Chain & Logistics Dashboard](./Supply-Chain-Logistics-PowerBI)
+
+---
+
 # 🏅 Olympics Data Analysis (EDA)
 
 **Tools:** Python, Pandas, NumPy, Matplotlib, Seaborn
@@ -239,7 +272,7 @@ Comprehensive analysis of restaurant customer behavior and sales patterns using 
 
 # 🌐 Portfolio Website
 
-Explore my full portfolio here:
+Explore my full portfolio:
 
 👉 https://ijasahamed.lovable.app/
 
@@ -258,4 +291,4 @@ https://github.com/ijasahamed5797
 
 ---
 
-⭐ *This portfolio demonstrates my ability to combine data science, machine learning, deep learning, and generative AI to build practical, real-world solutions.*
+⭐ *This portfolio demonstrates my ability to combine data science, machine learning, deep learning, generative AI, and business intelligence to build practical real-world solutions.*
