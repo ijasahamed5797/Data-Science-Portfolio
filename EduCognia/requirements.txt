@@ -1,0 +1,30 @@
+# Core
+numpy
+pandas
+scikit-learn
+xgboost
+lightgbm
+
+# Deep learning (for sequence model later)
+torch
+
+# Viz & notebooks
+matplotlib
+seaborn
+jupyter
+notebook
+
+# Web / data fetch
+requests
+tqdm
+pyarrow
+
+# Dashboard
+streamlit
+
+# Kaggle API for learning datasets
+kaggle
+
+joblib
+pywin32
+pynput
