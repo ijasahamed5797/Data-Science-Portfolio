@@ -1,72 +1,284 @@
-# EduCognia – Sensor-Free Cognitive Engagement Detection
+# 🧠 EduCognia – Cognitive Engagement Detection System
 
-EduCognia is an end-to-end machine learning system designed to detect a learner’s cognitive engagement state in online learning environments using passive behavioral interaction signals.
+## 📌 Project Overview
 
-Unlike traditional engagement detection systems that rely on intrusive sensors such as webcams, EEG devices, eye tracking, or wearables, EduCognia is completely sensor-free and privacy-preserving.
+**EduCognia** is an end-to-end machine learning system designed to detect a learner’s **cognitive engagement state in real-time** during online learning sessions.
 
-## Problem
+Unlike traditional engagement detection systems that rely on intrusive sensors such as webcams, EEG devices, eye tracking, or wearables, EduCognia is completely **sensor-free and privacy-preserving**.
 
-Online learning platforms rely on weak engagement signals such as:
+The system infers engagement by analyzing **behavioral interaction signals** such as mouse activity, keyboard input, idle time, and window switching behavior.
 
-- Session duration
-- Video completion
-- Page views
-- Quiz scores
+---
 
-These metrics do not reflect a learner’s real cognitive state.
+# 🎯 Problem Statement
 
-EduCognia addresses this by analyzing behavioral interaction signals.
+Most online learning platforms measure engagement using weak indicators such as:
 
-## Behavioral Signals Used
+• Session duration
+• Video completion
+• Page views
+• Quiz scores
 
-- Mouse movement patterns
-- Keyboard typing activity
-- Idle time
-- Window switching
-- Application usage duration
+These metrics **do not accurately reflect a learner’s cognitive state**.
 
-## Machine Learning Model
+Existing engagement detection systems often rely on:
 
-The system uses **Gradient Boosted Decision Trees (XGBoost)** trained on behavioral interaction features.
+• Webcam facial expression tracking
+• Eye tracking
+• EEG sensors
+• Wearable devices
 
-## Features Engineered
+These approaches introduce:
 
-- Interaction event count
-- Session duration
-- Mouse movement distance
-- Idle time fraction
-- Keyboard typing rate
-- Window switch frequency
-- Application usage share
+• Privacy concerns
+• High hardware costs
+• Poor scalability
 
-## System Components
+EduCognia solves this by using **passive behavioral interaction signals captured from the operating system and browser.**
 
-- Feature Engineering Pipeline
-- Machine Learning Model (XGBoost)
-- Real-time inference engine
-- FastAPI backend
-- Streamlit dashboard
-- Browser extension prototype
+---
 
-## Real-Time Monitoring
+# 🔄 System Pipeline (How It Works)
 
-The system captures interaction signals in 30-second windows and predicts engagement states:
+## 1️⃣ Interaction Logging
 
-- Engaged
-- Focused
-- Neutral
-- Distracted
-- Disengaged
+The system captures behavioral interaction signals including:
 
-## Competition Achievement
+• Mouse movement events
+• Keyboard typing activity
+• Idle time detection
+• Window switching behavior
+• Active application tracking
 
-🏆 **2nd Place – National Data Science Competition**
+These events are collected in **fixed time windows (30 seconds)**.
 
-## Tech Stack
+---
 
-Python  
-XGBoost  
-FastAPI  
-Streamlit  
-Pandas  
-NumPy
+## 2️⃣ Feature Engineering
+
+Raw interaction logs are converted into behavioral features:
+
+• Number of interaction events
+• Session duration
+• Mouse movement distance
+• Idle time fraction
+• Keyboard typing rate (keys/sec)
+• Window switch count
+• Window switch rate
+• Dominant application usage
+• Application time distribution
+
+These features represent **user attention and interaction patterns.**
+
+---
+
+## 3️⃣ Machine Learning Model
+
+The final model used is:
+
+**Gradient Boosted Decision Trees (XGBoost)**
+
+Reasons for choosing XGBoost:
+
+• Excellent performance on structured/tabular data
+• Captures complex non-linear behavioral patterns
+• Robust probability outputs
+• Efficient for real-time inference
+
+The model predicts five cognitive states:
+
+• Engaged
+• Focused
+• Neutral
+• Distracted
+• Disengaged
+
+---
+
+## 4️⃣ Real-Time Inference
+
+During a live session:
+
+1. Interaction signals are logged
+2. Behavioral features are generated
+3. The trained model predicts engagement state
+4. Class probabilities are produced
+5. A focus score is computed
+
+---
+
+## 5️⃣ Focus Score Calculation
+
+EduCognia introduces a **Focus Score (0–100)**.
+
+It is derived from:
+
+• Idle time fraction
+• Window switching frequency
+• Application dominance
+• Interaction intensity
+
+This provides an **interpretable indicator of learner focus.**
+
+---
+
+## 6️⃣ Rule-Based Policy Layer
+
+A rule-based policy layer ensures realistic predictions.
+
+Example rule:
+
+If the model predicts **Engaged** but the user spends most time on a **non-learning application**, the system downgrades the label to **Distracted**.
+
+This prevents misleading predictions.
+
+---
+
+## 7️⃣ Streamlit Dashboard
+
+The system includes an interactive **Streamlit dashboard** for monitoring engagement.
+
+The dashboard displays:
+
+• Live engagement prediction
+• Focus score
+• Class probability distribution
+• Application usage breakdown
+• Interaction timeline
+• Window switching visualization
+• Session history logs
+
+---
+
+# 🧩 Technologies Used
+
+## Backend
+
+• Python
+• Pandas
+• NumPy
+• XGBoost
+
+## Machine Learning
+
+• Scikit-learn
+• Gradient Boosted Trees
+
+## Visualization
+
+• Streamlit
+• Matplotlib
+• Plotly
+
+## API
+
+• FastAPI
+
+---
+
+# 🚀 Key Features
+
+## 📊 Behavioral Analytics
+
+• Interaction-based engagement detection
+• Feature engineering from system events
+• Behavioral pattern modeling
+
+---
+
+## 🤖 Machine Learning
+
+• XGBoost engagement classification
+• Probability confidence scoring
+• Cross-validation evaluation
+
+---
+
+## ⚡ Real-Time Monitoring
+
+• 30-second interaction windows
+• Real-time inference pipeline
+• Live cognitive state predictions
+
+---
+
+## 📈 Engagement Insights
+
+• Focus score metric
+• Application usage tracking
+• Session history analytics
+
+---
+
+# 🏗 Project Structure
+
+```
+EduCognia/
+│
+├── notebooks/
+│   ├── eda.ipynb
+│   ├── feature_engineering.ipynb
+│   └── model_training.ipynb
+│
+├── dashboard.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# ▶ Run Locally
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Run the dashboard:
+
+```
+streamlit run dashboard.py
+```
+
+---
+
+# 🏆 Competition Achievement
+
+This project was presented in a **National Data Science Competition** and achieved:
+
+🥈 **2nd Place Nationally**
+
+Evaluation criteria included:
+
+• Innovation and creativity
+• Problem solving approach
+• Technical implementation
+• Presentation quality
+
+---
+
+# 🔮 Future Improvements
+
+Possible future enhancements:
+
+• Temporal deep learning models (LSTM / Transformers)
+• Personalized engagement baselines
+• LMS integration (Moodle / Canvas)
+• Instructor analytics dashboards
+• Federated learning for privacy
+
+---
+
+# 📌 Summary
+
+EduCognia demonstrates how **behavioral interaction data can be used to detect learner engagement without intrusive sensors**.
+
+The system combines:
+
+• Behavioral feature engineering
+• Machine learning classification
+• Real-time inference
+• Interactive visualization
+
+to provide a **privacy-preserving engagement monitoring solution for online learning environments.**
