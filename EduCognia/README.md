@@ -150,6 +150,38 @@ The dashboard displays:
 
 ---
 
+# 📊 Dashboard Preview
+
+## Live Cognitive Monitor
+
+![Live Monitor](dashboard_live_monitor.png)
+
+This view captures real-time behavioral interaction signals such as mouse movement, typing activity, and window switching to estimate the user's cognitive state.
+
+---
+
+## Model Confidence
+
+![Model Confidence](model_confidence.png)
+
+The system displays probability confidence for each cognitive state predicted by the XGBoost model.
+
+---
+
+## Application Usage Analysis
+
+![App Usage](app_usage_analysis.png)
+
+This visualization shows the distribution of active applications during the session to determine whether the learner is focused on educational platforms.
+
+---
+
+## Activity Timeline
+
+![Activity Timeline](activity_timeline.png)
+
+The activity timeline visualizes interaction events across time, helping analyze attention patterns and window switching behavior.
+
 # 🧩 Technologies Used
 
 ## Backend
