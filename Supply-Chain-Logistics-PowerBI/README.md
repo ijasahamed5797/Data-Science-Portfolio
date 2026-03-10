@@ -2,171 +2,214 @@
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi&logoColor=black">
+<img src="https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-yellow?logo=powerbi&logoColor=black">
 <img src="https://img.shields.io/badge/Data%20Modeling-Star%20Schema-blue">
 <img src="https://img.shields.io/badge/DAX-Measures-green">
 <img src="https://img.shields.io/badge/Business%20Analytics-Supply%20Chain-orange">
 
 </p>
 
-An **interactive Power BI analytics solution** designed to monitor and optimize supply chain operations across suppliers, inventory, logistics, and customer demand.
+An **interactive Power BI analytics solution** built to analyze and optimize supply chain operations across suppliers, inventory, logistics performance, and customer demand.
 
-This dashboard enables stakeholders to **identify bottlenecks, analyze supplier performance, monitor inventory levels, and evaluate shipment efficiency** through real-time visual analytics.
+This dashboard transforms raw operational data into **actionable insights**, enabling stakeholders to monitor logistics performance, identify supply chain bottlenecks, and make data-driven operational decisions.
 
 ---
 
 # 📌 Business Problem
 
-Modern supply chains generate large volumes of operational data, but many organizations struggle with **limited visibility into logistics performance and inventory dynamics**.
+Modern supply chains generate large volumes of operational data, yet many organizations lack **clear visibility into logistics performance and inventory behavior**.
 
-Key challenges faced by logistics teams included:
+Logistics teams faced several challenges:
 
-• Limited visibility into **delivery delays and route performance**
+• Limited visibility into **delivery delays and shipment performance**
 • Difficulty identifying **underperforming suppliers**
 • Poor monitoring of **inventory levels across distribution centers**
-• Lack of centralized analytics for **decision making**
+• Fragmented reporting across multiple data sources
+• Delayed decision-making due to **manual reporting processes**
 
-Without a consolidated dashboard, decision-making relied on **manual reporting and fragmented data sources**.
+Without centralized analytics, operational inefficiencies often remained **hidden until they impacted business performance**.
 
 ---
 
 # 🎯 Project Objective
 
-The objective of this project was to build an **interactive supply chain intelligence dashboard** that allows business users to:
+The goal of this project was to develop an **interactive supply chain intelligence dashboard** that allows stakeholders to:
 
-• Monitor logistics performance in real time
-• Track supplier reliability and delivery efficiency
-• Analyze inventory levels and stock movements
-• Understand revenue contributions from customers
-• Identify operational bottlenecks across the supply chain
+• Monitor logistics operations in real time
+• Evaluate supplier reliability and delivery performance
+• Track inventory levels across distribution centers
+• Identify operational bottlenecks in shipments and logistics
+• Analyze customer demand and revenue distribution
+
+The solution provides a **single unified analytics platform** for supply chain monitoring and decision-making.
 
 ---
 
 # 🛠 Tools & Technologies
 
-| Category         | Tools                           |
-| ---------------- | ------------------------------- |
-| BI Platform      | Power BI                        |
-| Data Modeling    | Star Schema                     |
-| Calculations     | DAX                             |
-| Data Preparation | Power Query                     |
-| Data Sources     | Structured operational datasets |
+| Category              | Tools                           |
+| --------------------- | ------------------------------- |
+| Business Intelligence | Power BI                        |
+| Data Modeling         | Star Schema                     |
+| Calculations          | DAX                             |
+| Data Preparation      | Power Query                     |
+| Data Sources          | Structured operational datasets |
 
 ---
 
 # 🧩 Data Model
 
-The dashboard uses a **star schema model** consisting of:
+The dashboard uses a **star schema architecture** designed for efficient analytics.
 
-Fact tables
+### Fact Tables
 
-* Shipments
-* Orders
-* Inventory movements
+• Shipments
+• Orders
+• Inventory movements
 
-Dimension tables
+### Dimension Tables
 
-* Suppliers
-* Products
-* Distribution centers
-* Customers
-* Time
+• Suppliers
+• Products
+• Distribution centers
+• Customers
+• Time
 
-This structure enables **efficient filtering, drill-down analysis, and KPI calculations**.
+This model enables:
+
+• fast aggregation
+• efficient filtering
+• multi-dimensional analysis
+• drill-down capabilities
 
 ---
 
-# 📊 Dashboard Overview
+# 📊 Dashboard Views
+
+The Power BI dashboard consists of multiple analytical views designed to monitor different areas of supply chain operations.
+
+---
 
 ## Executive Overview
 
-<img src="dashboard_overview.png" width="900">
+<p align="center">
+<img src="Overview.png" width="900">
+</p>
 
-Provides high-level KPIs including:
+Provides a high-level summary of supply chain performance including:
 
-• Total shipments
-• Delivery performance
-• Inventory levels
-• Logistics efficiency metrics
+• total shipments
+• delivery performance metrics
+• inventory levels
+• logistics efficiency indicators
+
+This page acts as the **main operational control panel for supply chain monitoring**.
 
 ---
 
 ## Supplier Performance Analysis
 
-<img src="supplier_analysis.png" width="900">
+<p align="center">
+<img src="Supplier.png" width="900">
+</p>
 
-Analyzes supplier reliability by examining:
+This view evaluates supplier reliability and operational contribution.
 
-• delivery consistency
-• lead time variability
-• supplier contribution to total shipments
+Key insights include:
 
-This helps identify **top-performing and underperforming suppliers**.
+• supplier delivery consistency
+• lead-time variations
+• supplier shipment contribution
+
+This enables organizations to **identify high-performing and underperforming suppliers**.
 
 ---
 
 ## Inventory Analytics
 
-<img src="inventory_analytics.png" width="900">
+<p align="center">
+<img src="Inventory.png" width="900">
+</p>
 
-Tracks inventory across distribution centers and highlights:
+Tracks inventory distribution across warehouses and distribution centers.
 
-• stock shortages
-• excess inventory
-• seasonal demand patterns
+Key metrics include:
 
-Supports **inventory optimization and demand planning**.
+• stock levels
+• excess inventory detection
+• inventory shortages
+• seasonal demand variations
+
+This supports **inventory optimization and demand planning**.
 
 ---
 
 ## Shipment & Logistics Insights
 
-<img src="shipment_logistics.png" width="900">
+<p align="center">
+<img src="Shipment.png" width="900">
+</p>
 
-Analyzes shipment routes and logistics operations to detect:
+Analyzes shipment routes and transportation performance.
 
-• delivery delays
-• route inefficiencies
-• transportation performance trends
+Key metrics:
+
+• delivery timelines
+• shipment route efficiency
+• delay patterns
+• logistics performance trends
+
+This helps detect **logistics bottlenecks affecting delivery performance**.
 
 ---
 
 ## Customer Revenue Analytics
 
-<img src="customer_revenue.png" width="900">
+<p align="center">
+<img src="Customer.png" width="900">
+</p>
 
-Evaluates customer contribution to revenue by:
+Provides insights into customer demand and revenue contribution.
 
-• region
-• product category
-• order frequency
+Key analytics include:
 
-Helps identify **high-value customers and demand trends**.
+• regional revenue distribution
+• product demand patterns
+• customer purchase behavior
+
+This allows businesses to **identify high-value customers and market trends**.
 
 ---
 
-# 🔍 Key Insights Generated
+# 🔍 Key Insights
 
-Through the dashboard analysis, several operational insights were uncovered:
+The dashboard analysis revealed several operational insights:
 
-• Delivery delays were concentrated in specific shipping routes
-• Certain distribution centers consistently showed **inventory imbalance**
-• A small group of suppliers accounted for **major shipment volumes**
-• Seasonal demand spikes influenced inventory requirements
-• Customer revenue distribution revealed **key high-value regions**
+• Delivery delays were concentrated in **specific shipment routes**
+• Some distribution centers showed **consistent inventory imbalances**
+• A small number of suppliers accounted for **major shipment volumes**
+• Seasonal demand fluctuations significantly affected inventory levels
+• Customer revenue distribution highlighted **high-value market regions**
+
+These insights help supply chain teams **prioritize operational improvements**.
 
 ---
 
 # 📈 Business Impact
 
-The dashboard enables supply chain managers to make **data-driven operational decisions**.
+This analytics solution enables logistics teams to make **data-driven operational decisions**.
 
-Potential impact includes:
+Expected business benefits include:
 
-• Reduction in inventory discrepancies (~15%)
-• Improved supplier performance monitoring
-• Faster detection of logistics bottlenecks
-• Better demand forecasting and inventory planning
+• Improved visibility into supply chain operations
+• Faster identification of logistics bottlenecks
+• Better supplier performance management
+• Optimized inventory planning
+• Enhanced demand forecasting
+
+Estimated outcome:
+
+**~15% reduction in inventory discrepancies and improved supply chain efficiency.**
 
 ---
 
@@ -175,12 +218,12 @@ Potential impact includes:
 ```
 Supply-Chain-Logistics-PowerBI
 │
-├ supply_chain_dashboard.pbix
-├ dashboard_overview.png
-├ supplier_analysis.png
-├ inventory_analytics.png
-├ shipment_logistics.png
-├ customer_revenue.png
+├ Capstone Project 1 - Xiaomi Logistics.pbix
+├ Overview.png
+├ Supplier.png
+├ Inventory.png
+├ Shipment.png
+├ Customer.png
 └ README.md
 ```
 
@@ -188,24 +231,27 @@ Supply-Chain-Logistics-PowerBI
 
 # 🚀 How to Use
 
-1. Download the `.pbix` file from this repository
-2. Open using **Microsoft Power BI Desktop**
-3. Explore interactive filters and visualizations
-4. Analyze supply chain KPIs across dashboards
+1️⃣ Download the `.pbix` file from this repository
+2️⃣ Open using **Microsoft Power BI Desktop**
+3️⃣ Explore interactive filters, slicers, and dashboards
+4️⃣ Analyze supply chain KPIs across different views
 
 ---
 
 # 💡 Future Improvements
 
-• Integration with real-time logistics APIs
-• Predictive analytics for delivery delays
-• Demand forecasting models for inventory planning
-• Automated alerts for supply chain anomalies
+Potential enhancements for this project include:
+
+• integration with real-time logistics APIs
+• predictive analytics for delivery delay forecasting
+• machine learning models for demand forecasting
+• automated alerts for supply chain anomalies
+• cloud-based dashboard deployment
 
 ---
 
 # 📌 Summary
 
-This project demonstrates how **business intelligence tools like Power BI can transform raw operational data into actionable supply chain insights**.
+This project demonstrates how **Power BI can transform operational supply chain data into meaningful business insights**.
 
-The dashboard combines **data modeling, DAX calculations, and interactive visualization** to help organizations improve logistics efficiency and support strategic decision-making.
+By combining **data modeling, DAX calculations, and interactive visual analytics**, the dashboard provides a powerful decision-support tool for improving supply chain performance and operational efficiency.
